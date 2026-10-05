@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Historias con Gemini</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="chat">
+      <header class="chat__header">
+        <span class="chat__avatar" aria-hidden="true">G</span>
+        <div>
+          <h1>Historias con Gemini</h1>
+          <p>Un pequeño rincón para imaginar</p>
+        </div>
+      </header>
+
+      <section
+        class="chat__messages"
+        id="messages"
+        aria-label="Conversación"
+        aria-live="polite"
+      >
+        <article class="message message--gemini">
+          <p>¡Hola! Cuando quieras, puedo contarte una historia corta.</p>
+        </article>
+      </section>
+
+      <footer class="chat__footer">
+        <button class="chat__button" id="story-button" type="button">
+          Cuéntame una historia
+        </button>
+        <p class="chat__hint">Gemini responderá aquí en el chat.</p>
+      </footer>
+    </main>
+  </body>
+</html>
